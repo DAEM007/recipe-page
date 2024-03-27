@@ -15,7 +15,7 @@
   --Dark-Raspberry: hsl(332, 51%, 32%);
   --White: hsl(0, 0%, 100%);
   --Rose-White: hsl(330, 100%, 98%);
-  --Eggshell: hsl(30, 54%, 90%);
+  --Egg-shell: hsl(30, 54%, 90%);
   --Light-Grey: hsl(30, 18%, 87%);
   --Wenge-Brown: hsl(30, 10%, 34%);
   --Dark-Charcoal: hsl(24, 5%, 18%);
@@ -25,17 +25,27 @@
   --font-700: 700;
   --young-serif: "Young Serif", serif;
   --outfit: "Outfit", sans-serif;
+  --medium: 768px;
 }
 
 /* mobile first */
+body {
+  /* background: var(--Egg-shell); */
+  font-size: var(--font-paragraph);
+  font-family: var(--outfit);
+}
 
 .attribution {
   font-size: 11px;
   text-align: center;
   margin-top: 2rem;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
 /* desktop responsive styles */
+@media (min-width: var(--medium)) {
+  /* TODO: */
+}
