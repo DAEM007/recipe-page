@@ -15,27 +15,144 @@
   --Dark-Raspberry: hsl(332, 51%, 32%);
   --White: hsl(0, 0%, 100%);
   --Rose-White: hsl(330, 100%, 98%);
-  --Eggshell: hsl(30, 54%, 90%);
+  --Egg-shell: hsl(30, 54%, 90%);
   --Light-Grey: hsl(30, 18%, 87%);
   --Wenge-Brown: hsl(30, 10%, 34%);
   --Dark-Charcoal: hsl(24, 5%, 18%);
-  --font-paragraph: 16px;
+  --font-paragraph: 1rem;
   --font-400: 400;
+  --font-500: 500;
   --font-600: 600;
   --font-700: 700;
   --young-serif: "Young Serif", serif;
   --outfit: "Outfit", sans-serif;
 }
 
+body {
+  background: var(--Egg-shell);
+  font-size: var(--font-paragraph);
+  font-family: var(--outfit);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
 /* mobile first */
+.recipe-card-wrapper {
+  max-width: 1100px;
+  /* margin-inline: 0; */
+}
+
+.recipe-card-wrapper .recipe-card {
+  background: var(--White);
+  max-width: 600px;
+  /* margin-inline: 0; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.omelette-image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.omelette-image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.omelette-details-card {
+  background: var(--White);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.omelette-intro .omelette-intro-header {
+  margin-bottom: 1rem;
+}
+
+.omelette-intro .omelette-intro-header h3 {
+  font-size: 2rem;
+  font-family: var(--young-serif);
+}
+
+.omelette-intro p,
+.omelette-prep-time .prep-time p {
+  color: var(--Wenge-Brown);
+  font-weight: var(--font-500);
+}
+
+.omelette-prep-time .prep-time p strong {
+  font-weight: var(--font-700);
+}
+
+.omelette-prep-time {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  background: var(--Rose-White);
+  padding: 2rem;
+}
+
+.omelette-prep-time-header {
+  color: var(--Dark-Raspberry);
+  font-size: 1.2rem;
+}
+
+.omelette-prep-time .prep-time {
+  display: flex;
+  align-items: center;
+}
+
+.prep-time .total {
+  display: flex;
+  flex-direction: column;
+}
+
+.omelette-prep-time .prep-time .bullet {
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  margin-left: 0.4rem;
+  margin-right: 1.5rem;
+  background: var(--Dark-Raspberry);
+}
 
 .attribution {
   font-size: 11px;
   text-align: center;
   margin-top: 2rem;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
 /* desktop responsive styles */
+@media (min-width: 768px) {
+  body {
+    margin-top: 4rem;
+  }
+
+  .recipe-card-wrapper {
+    margin-inline: auto;
+  }
+
+  .recipe-card,
+  .omelette-details-card {
+    border-radius: 1rem;
+  }
+
+  .omelette-image-container {
+    padding: 1rem;
+  }
+}
