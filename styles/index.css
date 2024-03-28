@@ -19,7 +19,7 @@
   --Light-Grey: hsl(30, 18%, 87%);
   --Wenge-Brown: hsl(30, 10%, 34%);
   --Dark-Charcoal: hsl(24, 5%, 18%);
-  --font-paragraph: 16px;
+  --font-paragraph: 1rem;
   --font-400: 400;
   --font-600: 600;
   --font-700: 700;
@@ -28,11 +28,57 @@
   --medium: 768px;
 }
 
-/* mobile first */
 body {
-  /* background: var(--Egg-shell); */
+  background: var(--Egg-shell);
   font-size: var(--font-paragraph);
   font-family: var(--outfit);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* mobile first */
+.recipe-card-wrapper {
+  max-width: 1100px;
+  /* margin-inline: 0; */
+}
+
+.recipe-card-wrapper .recipe-card {
+  background: var(--White);
+  max-width: 450px;
+  /* margin-inline: 0; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.omelette-image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.omelette-image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.omelette-details-card {
+  background: var(--White);
+  width: 100%;
+  padding: 1rem;
+}
+
+.omelette-intro .omelette-intro-header {
+  margin-bottom: 1rem;
+}
+
+.omelette-intro .omelette-intro-header h3 {
+  font-size: 2rem;
+  font-family: var(--young-serif);
 }
 
 .attribution {
@@ -47,5 +93,7 @@ body {
 
 /* desktop responsive styles */
 @media (min-width: var(--medium)) {
-  /* TODO: */
+  .recipe-card-wrapper {
+    margin-inline: auto;
+  }
 }
