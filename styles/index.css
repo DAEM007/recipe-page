@@ -85,7 +85,8 @@ body {
 }
 
 .omelette-intro p,
-.omelette-prep-time .prep-time p {
+.omelette-prep-time .prep-time p,
+.ingredients-box p {
   color: var(--Wenge-Brown);
   font-weight: var(--font-500);
 }
@@ -125,6 +126,38 @@ body {
   margin-left: 0.4rem;
   margin-right: 1.5rem;
   background: var(--Dark-Raspberry);
+}
+
+.omelette-ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.omelette-ingredients-header {
+  color: var(--Nutmeg);
+  font-size: 1.7rem;
+  font-family: var(--young-serif);
+}
+
+.ingredients-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ingredients-box {
+  display: flex;
+  align-items: center;
+}
+
+.ingredients-box .bullet {
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+  margin-right: 1.5rem;
+  background: var(--Nutmeg);
 }
 
 .attribution {
