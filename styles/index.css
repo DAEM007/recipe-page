@@ -174,7 +174,7 @@ body {
 /* desktop responsive styles */
 @media (min-width: 768px) {
   body {
-    margin-top: 4rem;
+    margin-block: 4rem;
   }
 
   .recipe-card-wrapper {
