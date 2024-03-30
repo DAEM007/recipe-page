@@ -13,8 +13,8 @@
 
 ### Links
 
-- solution URL - [daem-social-profile-links-solution](https://github.com/DAEM007/social-links-profile)
-- Live Site URL: [daem-social-profile-links-live](https://social-links-profile-sable.vercel.app/)
+- solution URL - [daem-recipe-page-solution](https://github.com/DAEM007/recipe-page)
+- Live Site URL: [daem-recipe-page-live](https://recipe-page-daem007.vercel.app/)
 
 ### Built with
 
